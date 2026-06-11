@@ -53,7 +53,7 @@ export function Header() {
           </a>
         </nav>
 
-        <button
+        {/* <button
           className="
             absolute
             right-6
@@ -70,7 +70,7 @@ export function Header() {
           aria-label="Toggle theme"
         >
           <MdDarkMode size={18} />
-        </button>
+        </button> */}
 
       </div>
     </header>
