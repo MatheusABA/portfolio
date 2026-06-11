@@ -1,14 +1,49 @@
+import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGitlab } from "react-icons/fa6";
+
 export function Hero() {
   return (
-    <section className="border-b-4 border-black">
-      <div className="mx-auto max-w-7xl px-6 py-24">
-        <h1 className="text-6xl font-black uppercase leading-none md:text-9xl">
-          Matheus
-          <br />
-          Alexandre
+    <section id="hero" className="border-b-4 border-black">
+      <div className="mx-auto max-w-7xl px-6 py-16 md:py-10">
+        <h1
+          className="
+            text-6xl
+            font-black
+            uppercase
+            leading-[0.85]
+            md:text-8xl
+            lg:text-[10rem]
+          "
+        >
+          <span className="block">Matheus</span>
+
+          <span className="block text-(--accent)">Alexandre</span>
         </h1>
 
-        <p className="mt-8 max-w-2xl text-xl">
+        <h2
+          className="
+            mt-6
+            font-(--font-space)
+            text-xl
+            font-bold
+            uppercase
+            tracking-[0.2em]
+            md:text-2xl
+          "
+        >
+          Software Engineer
+        </h2>
+
+        <p
+          className="
+            font-(--font-space)
+            mt-6
+            max-w-2xl
+            text-lg
+            leading-relaxed
+            md:text-xl
+          "
+        >
           Building mobile applications, backend services and digital products
           used by real customers.
         </p>
@@ -17,32 +52,104 @@ export function Hero() {
           <a
             href="https://www.linkedin.com/in/matheus-alexandre-b69ab3224/"
             target="_blank"
-            className="border-4 border-black px-6 py-3 font-bold uppercase"
+            rel="noopener noreferrer"
+            className="
+            flex
+            items-center
+            gap-2
+            border-4
+            border-black
+            bg-white
+            px-6
+            py-3
+            font-(--font-space)
+            uppercase
+            shadow-[6px_6px_0px_0px_black]
+            transition-all
+            duration-200
+            hover:-translate-y-1
+            hover:shadow-[10px_10px_0px_0px_black]
+              "
           >
+            <FaLinkedin size={18} color="#0077B5" />
             LinkedIn
           </a>
 
           <a
             href="https://github.com/MatheusABA"
             target="_blank"
-            className="border-4 border-black px-6 py-3 font-bold uppercase"
+            rel="noopener noreferrer"
+            className="
+            flex
+            items-center
+            gap-2
+            border-4
+            border-black
+            bg-white
+            px-6
+            py-3
+            font-(--font-space)
+            uppercase
+            shadow-[6px_6px_0px_0px_black]
+            transition-all
+            duration-200
+            hover:-translate-y-1
+            hover:shadow-[10px_10px_0px_0px_black]
+              "
           >
+            <FaGithub size={18} />
             GitHub
           </a>
 
           <a
             href="https://gitlab.com/MatheusABA"
             target="_blank"
-            className="border-4 border-black px-6 py-3 font-bold uppercase"
+            rel="noopener noreferrer"
+            className="
+            flex
+            items-center
+            gap-2
+            border-4
+            border-black
+            bg-white
+            px-6
+            py-3
+            font-(--font-space)
+            uppercase
+            shadow-[6px_6px_0px_0px_black]
+            transition-all
+            duration-200
+            hover:-translate-y-1
+            hover:shadow-[10px_10px_0px_0px_black]
+              "
           >
+            <FaGitlab size={18} color="orange"/>
             GitLab
           </a>
 
           <a
             href="/cv_developer_matheus_alexandre.pdf"
             target="_blank"
-            className="bg-black px-6 py-3 font-bold uppercase text-white"
+            rel="noopener noreferrer"
+            className="
+                        flex
+            items-center
+            gap-2
+            border-4
+            border-black
+            bg-white
+            px-6
+            py-3
+            font-(--font-space)
+            uppercase
+            shadow-[6px_6px_0px_0px_black]
+            transition-all
+            duration-200
+            hover:-translate-y-1
+            hover:shadow-[10px_10px_0px_0px_black]
+          "
           >
+            <FaFilePdf size={18} color="red"/>
             Download CV
           </a>
         </div>
