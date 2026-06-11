@@ -44,6 +44,13 @@ export function Header() {
           >
             Education
           </a>
+
+          <a
+            href="#contact"
+            className="transition-opacity hover:opacity-60"
+          >
+            Contact
+          </a>
         </nav>
 
         <button

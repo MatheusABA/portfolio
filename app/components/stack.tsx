@@ -17,6 +17,7 @@ import {
   SiPm2,
   SiMercadopago,
   SiSocketdotio,
+  SiLinux,
 } from "react-icons/si";
 import { FaAws, FaJava } from "react-icons/fa";
 import { TbBrandGoogleMaps } from "react-icons/tb";
@@ -51,87 +52,67 @@ export function Stack() {
 
         <div className="mt-4 grid gap-6 md:grid-cols-4 lg:grid-cols-5 sm:grid-cols-3">
           <StackCard
-            icon={<SiReact />}
-            iconColor="#61DAFB"
-            name="React Native"
-            description="Cross-platform mobile apps"
+            name="Mobile"
+            description="React Native ecosystem"
+            icons={[
+              { icon: <SiReact />, color: "#61dafb" },
+              { icon: <SiExpo />, color: "#000000" },
+            ]}
           />
 
           <StackCard
-            icon={<SiExpo />}
-            iconColor="#000000"
-            name="Expo"
-            description="Rapid mobile development"
-          />
-
-          <StackCard
-            icon={<SiReact />}
-            iconColor="#61DAFB"
+            icons={[{ icon: <SiReact />, color: "#61dafb" }]}
             name="React.JS"
             description="Web applications"
           />
 
           <StackCard
-            icon={<SiNextdotjs />}
-            iconColor="#000000"
+            icons={[{ icon: <SiNextdotjs />, color: "#000000" }]}
             name="Next.js"
             description="Full-stack web applications"
           />
 
           <StackCard
-            icon={<SiNodedotjs />}
-            iconColor="#339933"
-            name="Node.js"
-            description="Backend"
+            name="Backend"
+            description="NestJS (Node.js), scalable APIs, real-time systems, integrations"
+            icons={[
+              { icon: <SiNodedotjs />, color: "#3C873A" },
+              { icon: <SiNestjs />, color: "#E0234E" },
+            ]}
           />
 
           <StackCard
-            icon={<SiNestjs />}
-            iconColor="#E0234E"
-            name="NestJS"
-            description="Backend framework"
-          />
-
-          <StackCard
-            icon={<BiLogoPostgresql />}
-            iconColor="#336791"
+            icons={[{ icon: <BiLogoPostgresql />, color: "#336791" }]}
             name="PostgreSQL"
             description="SQL database"
           />
 
           <StackCard
-            icon={<SiMongodb />}
-            iconColor="#47A248"
+            icons={[{ icon: <SiMongodb />, color: "#47A248" }]}
             name="MongoDB"
             description="NoSQL database"
           />
 
           <StackCard
-            icon={<SiPrisma />}
-            iconColor="#2D3748"
+            icons={[{ icon: <SiPrisma />, color: "#2D3748" }]}
             name="Prisma"
             description="Database ORM"
           />
 
           <StackCard
-            icon={<SiFirebase />}
-            iconColor="#FFCA28"
+            icons={[{ icon: <SiFirebase />, color: "#FFCA28" }]}
             name="Firebase"
             description="Auth & cloud services"
           />
 
           <StackCard
-            icon={<SiDigitalocean />}
-            iconColor="#0080FF"
-            name="DigitalOcean"
-            description="Cloud infrastructure"
-          />
-
-          <StackCard
-            icon={<SiNginx />}
-            iconColor="#009639"
-            name="NGINX"
-            description="Web server & reverse proxy"
+            name="Infrastructure"
+            description="Linux, NGINX, server deployment & production systems"
+            icons={[
+              { icon: <SiLinux />, color: "#FCC624" },
+              { icon: <SiNginx />, color: "#009639" },
+              { icon: <SiDigitalocean />, color: "#0080FF" },
+            ]}
           />
         </div>
 
@@ -164,7 +145,11 @@ export function Stack() {
 
           <TechChip icon={<FaJava />} label="Java" color="#E4772B" />
 
-          <TechChip icon={<BiLogoSpringBoot />} label="Spring Boot" color="#6DB33F" />
+          <TechChip
+            icon={<BiLogoSpringBoot />}
+            label="Spring Boot"
+            color="#6DB33F"
+          />
 
           <TechChip icon={<FcLinux />} label="Linux" color="#FCC624" />
 
