@@ -2,7 +2,6 @@ import {
   SiReact,
   SiNextdotjs,
   SiNestjs,
-  SiPostgresql,
   SiMongodb,
   SiFirebase,
   SiPrisma,
@@ -13,16 +12,19 @@ import {
   SiNodedotjs,
   SiSequelize,
   SiPython,
-  SiLinux,
   SiMapbox,
   SiMongoose,
   SiPm2,
+  SiMercadopago,
+  SiSocketdotio,
 } from "react-icons/si";
+import { FaAws, FaJava } from "react-icons/fa";
+import { TbBrandGoogleMaps } from "react-icons/tb";
+import { BiLogoPostgresql, BiLogoSpringBoot } from "react-icons/bi";
+import { FcLinux } from "react-icons/fc";
 
 import { StackCard } from "./stackCard";
 import { TechChip } from "./techChip";
-import { FaAws } from "react-icons/fa";
-import { TbBrandGoogleMaps } from "react-icons/tb";
 
 export function Stack() {
   return (
@@ -79,8 +81,8 @@ export function Stack() {
           <StackCard
             icon={<SiNodedotjs />}
             iconColor="#339933"
-            name="Express"
-            description="Backend framework"
+            name="Node.js"
+            description="Backend"
           />
 
           <StackCard
@@ -91,7 +93,7 @@ export function Stack() {
           />
 
           <StackCard
-            icon={<SiPostgresql />}
+            icon={<BiLogoPostgresql />}
             iconColor="#336791"
             name="PostgreSQL"
             description="SQL database"
@@ -160,7 +162,11 @@ export function Stack() {
 
           <TechChip icon={<SiPython />} label="Python" color="#3776AB" />
 
-          <TechChip icon={<SiLinux />} label="Linux" color="#FCC624" />
+          <TechChip icon={<FaJava />} label="Java" color="#E4772B" />
+
+          <TechChip icon={<BiLogoSpringBoot />} label="Spring Boot" color="#6DB33F" />
+
+          <TechChip icon={<FcLinux />} label="Linux" color="#FCC624" />
 
           <TechChip icon={<SiPm2 />} label="PM2" color="#2B037A" />
 
@@ -177,6 +183,18 @@ export function Stack() {
           <TechChip icon={<SiMongoose />} label="Mongoose" color="#880000" />
 
           <TechChip icon={<SiSequelize />} label="Sequelize" color="#52B0E7" />
+
+          <TechChip
+            icon={<SiSocketdotio />}
+            label="WebSockets"
+            color="#010101"
+          />
+
+          <TechChip
+            icon={<SiMercadopago />}
+            label="Mercado Pago Checkout"
+            color="#00B1EA"
+          />
         </div>
       </div>
     </section>
