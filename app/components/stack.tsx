@@ -9,12 +9,20 @@ import {
   SiExpo,
   SiNginx,
   SiGooglecloud,
-  SiExpress,
   SiDigitalocean,
   SiNodedotjs,
+  SiSequelize,
+  SiPython,
+  SiLinux,
+  SiMapbox,
+  SiMongoose,
+  SiPm2,
 } from "react-icons/si";
 
 import { StackCard } from "./stackCard";
+import { TechChip } from "./techChip";
+import { FaAws } from "react-icons/fa";
+import { TbBrandGoogleMaps } from "react-icons/tb";
 
 export function Stack() {
   return (
@@ -142,38 +150,33 @@ export function Stack() {
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
-          {[
-            "AWS",
-            "Google Cloud",
-            "Python",
-            "Linux",
-            "PM2",
-            "WebSockets",
-            "Mapbox",
-            "Google Maps",
-            "Mercado Pago",
-            "Firestore",
-            "Mongoose",
-            "Sequelize",
-          ].map((tech) => (
-            <span
-              key={tech}
-              className="
-            border-2
-            border-black
-            px-4
-            py-2
-            text-sm
-            font-semibold
-            uppercase
-            transition-all
-            hover:-translate-y-1
-            hover:shadow-[4px_4px_0px_0px_black]
-          "
-            >
-              {tech}
-            </span>
-          ))}
+          <TechChip icon={<FaAws />} label="AWS" color="#FF9900" />
+
+          <TechChip
+            icon={<SiGooglecloud />}
+            label="Google Cloud"
+            color="#4285F4"
+          />
+
+          <TechChip icon={<SiPython />} label="Python" color="#3776AB" />
+
+          <TechChip icon={<SiLinux />} label="Linux" color="#FCC624" />
+
+          <TechChip icon={<SiPm2 />} label="PM2" color="#2B037A" />
+
+          <TechChip icon={<SiMapbox />} label="Mapbox" color="#000000" />
+
+          <TechChip
+            icon={<TbBrandGoogleMaps />}
+            label="Google Maps"
+            color="#34A853"
+          />
+
+          <TechChip icon={<SiFirebase />} label="Firestore" color="#FFCA28" />
+
+          <TechChip icon={<SiMongoose />} label="Mongoose" color="#880000" />
+
+          <TechChip icon={<SiSequelize />} label="Sequelize" color="#52B0E7" />
         </div>
       </div>
     </section>
