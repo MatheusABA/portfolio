@@ -12,9 +12,9 @@ export default function Home() {
 
       <Hero />
 
-      <Stack />
-
       <Experience />
+
+      <Stack />
 
       <Education />
 
