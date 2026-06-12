@@ -36,7 +36,7 @@ export function Hero() {
 
         <p
           className="
-            font-(--font-space)
+            font-stretch-semi-condensed
             mt-6
             max-w-2xl
             text-lg
@@ -44,8 +44,9 @@ export function Hero() {
             md:text-xl
           "
         >
-          Building mobile applications, backend services and digital products
-          used by real customers.
+          Building and operating production systems across mobile, web, backend,
+          and cloud infrastructure, with end-to-end ownership from architecture
+          to deployment.
         </p>
 
         <div className="mt-12 flex flex-wrap gap-4">
@@ -123,7 +124,7 @@ export function Hero() {
             hover:shadow-[10px_10px_0px_0px_black]
               "
           >
-            <FaGitlab size={18} color="orange"/>
+            <FaGitlab size={18} color="orange" />
             GitLab
           </a>
 
@@ -149,7 +150,7 @@ export function Hero() {
             hover:shadow-[10px_10px_0px_0px_black]
           "
           >
-            <FaFilePdf size={18} color="red"/>
+            <FaFilePdf size={18} color="red" />
             Download CV
           </a>
         </div>
