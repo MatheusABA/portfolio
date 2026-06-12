@@ -19,7 +19,7 @@ export function Contact() {
           <p className="text-sm leading-relaxed opacity-80">
             I’m currently open to new opportunities in full-stack and backend
             engineering roles. Feel free to reach out if you want to discuss
-            projects, collaborations or opportunities.
+            projects, collaborations or would like to offer opportunities.
           </p>
 
           {/* LINKS */}
